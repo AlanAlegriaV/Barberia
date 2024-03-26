@@ -1,0 +1,25 @@
+
+.banner{
+    background-color: black;
+    font-family: 'Tahoma';
+    height: 40px;
+}
+
+h1{
+    height: 25px;
+    color: white;    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor{
+    display: flex;
+
+}
+
+.logo{
+    height: 70px;
+}
+button{
+    border:1px solid yellow;
+}
