@@ -12,14 +12,17 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
+h2{
+    font-size: small;
+    color:black;
+    text-align: center; 
+}
+
 .contenedor{
     display: flex;
-
 }
 
-.logo{
-    height: 70px;
-}
+
 button{
     border:1px solid yellow;
 }
