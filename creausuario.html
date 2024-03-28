@@ -1,15 +1,43 @@
-<html>
-    <div>
-        <p>VIVE LA EXPERIENCIA. RESERVA TU HORA</p>
-            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS-Barberia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+</head>
+<body>
+    <div class="titulo">
+        Vive la experiencia, Reserva tu hora
     </div>
-    <div>
-       <image src="assets/img/carru2_1.png" /><br><br> 
-       <input placeholder="CORREO" /><br><br>
-       <input placeholder="CONTRASENA"/><br>
-       <input placeholder="REPITA CONTRASENA"/><br><br>
-       <input placeholder="NOMBRES"/><br>
-       <input placeholder="APELLIDOS"/><br><br>
-       <button> CREAR CUENTA </button>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mb-0 col-sm-8 col-lg-4 login">
+                <div style="background-color: white; padding: 40px;border-radius:5%;">
+                <img src="/assets//img/logo-s.png" class="login-logo">
+                <div class="mb-1 align-items-center justify-content-center ">
+                        <center><label for="formGroupExampleInput" class="form-label text-center ">Nombre</label></center>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                    </div>
+                    <div class="mb-4">
+                        <center><label for="formGroupExampleInput2" class="form-label">Correo</label></center>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <div class="mb-1">
+                        <center><label for="formGroupExampleInput2" class="form-label">Contraseña</label></center>
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <div class="mb-1">
+                        <center><label for="formGroupExampleInput2" class="form-label">Repita Contraseña</label></center>
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <center><a class="btn btn-primary" href="#" role="button">Iniciar</a></center>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-8 img_lateral"></div>
+        </div>
     </div>
-</html>    
+</body>
+</html>

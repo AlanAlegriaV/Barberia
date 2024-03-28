@@ -18,7 +18,7 @@
 .login{
     background-image: url('/assets/img/patern.png');
     height: 95vh; /* Misma altura que el div de la imagen */
-    padding: 60px; /* Espacio interno */
+    padding: 40px; /* Espacio interno */
 }
 
 /* Estilo para la imagen de inicio de sesión */
