@@ -1,0 +1,35 @@
+
+/* Personaliza el color de fondo */
+ .titulo{
+    background-color: black; /* Color de fondo negro */
+    height: 5vh; /* Altura del título */
+    color: white; /* Color del texto */
+    font-size: 3.5vh; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto al centro */
+    line-height: 5vh; /* Altura de línea para centrar verticalmente */
+}
+.img_lateral{
+    background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posiciona la imagen en el centro */
+    height: 95vh; /* Altura del div con la imagen */
+    background-image: url('/assets/img/barbe2.png'); /* Ruta de la imagen de fondo */
+}
+
+.login{
+    background-image: url('/assets/img/patern.png');
+    height: 95vh; /* Misma altura que el div de la imagen */
+    padding: 60px; /* Espacio interno */
+}
+
+/* Estilo para la imagen de inicio de sesión */
+.login-logo{
+    width: 100%; /* Ancho completo */
+    max-width: 200px; /* Ancho máximo */
+    display: block; /* Para centrar horizontalmente */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+.vinculo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

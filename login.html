@@ -1,21 +1,38 @@
-<html>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <div class="banner">
-        <h1>VIVE LA EXPERIENCIA. RESERVA TU HORA</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS-Barberia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+</head>
+<body>
+    <div class="titulo">
+        Vive la experiencia, Reserva tu hora
     </div>
 
-    <div class="contenedor">
-            <div>
-                 <image src="assets/img/barbe2.png" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col-lg-4 login">
+             
+                <div style="background-color: white; padding: 40px;border-radius:5%;">
+                <img src="/assets//img/logo-s.png" class="login-logo">
+                <div class="mb-3 align-items-center justify-content-center">
+                        <center><label for="formGroupExampleInput" class="form-label text-center">Correo</label></center>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <center><label for="formGroupExampleInput2" class="form-label">Contraseña</label></center>
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <center><a class="btn btn-primary" href="#" role="button">Iniciar</a></center><br>
+                    <center><a href="restorepass.html">¿OLVIDASTE TU CLAVE?</a><br></center>
+                    <center><a href="creausuario.html">¿NO TIENES CUENTA?</a></center>
+                </div>
             </div>
-        <div class="inicio">
-            <center><image src="assets/img/logo.png"/></center><br><br>
-            <center><input placeholder="USUARIO" /></center><br><br>
-            <center><input placeholder="CONTRASENA"/></center><br><br>
-            <center><button> ENTRAR</button></center><br>
-            <h2><a href="restorepass.html">¿OLVIDADSTE TU CLAVE?</a></h2><br>
-            <h2><a href="creausuario.html">¿NO TIENES CUENTA?</a></h2>
+            <div class="col-sm-4 col-lg-8 img_lateral"></div>
         </div>
-    </div>    
-</html>    
+    </div>
+</body>
+</html>
