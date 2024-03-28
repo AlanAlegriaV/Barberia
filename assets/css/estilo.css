@@ -14,6 +14,12 @@
     height: 95vh; /* Altura del div con la imagen */
     background-image: url('/assets/img/barbe2.png'); /* Ruta de la imagen de fondo */
 }
+.img_lateral_crea{
+    background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posiciona la imagen en el centro */
+    height: 95vh; /* Altura del div con la imagen */
+    background-image: url('/assets/img/barbe3.png'); /* Ruta de la imagen de fondo */
+}
 
 .login{
     background-image: url('/assets/img/patern.png');
