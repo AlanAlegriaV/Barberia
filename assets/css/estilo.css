@@ -8,17 +8,45 @@
     text-align: center; /* Alineación del texto al centro */
     line-height: 5vh; /* Altura de línea para centrar verticalmente */
 }
+.psub{
+    height: 5vh;
+    color: black;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
 .img_lateral{
     background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
     background-position: center; /* Posiciona la imagen en el centro */
     height: 95vh; /* Altura del div con la imagen */
     background-image: url('/assets/img/barbe2.png'); /* Ruta de la imagen de fondo */
 }
+.img_restorepass{
+    background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posiciona la imagen en el centro */
+    height: 95vh; /* Altura del div con la imagen */
+    background-image: url('/assets/img/restore.png'); /* Ruta de la imagen de fondo */
+}
 .img_lateral_crea{
     background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
     background-position: center; /* Posiciona la imagen en el centro */
     height: 95vh; /* Altura del div con la imagen */
     background-image: url('/assets/img/barbe3.png'); /* Ruta de la imagen de fondo */
+}
+
+.pcorreo{
+    color:black;
+    font-size: 23px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ppagina{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 23px;
+    color: black;
 }
 
 .login{

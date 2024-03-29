@@ -1,31 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+    <title>Document</title>
+    <div class="container-fluid titulo">
+        Bienvenido "Home"
+    </div>
+    <div class="container-fluid" style="padding: 15px;">
+        <center><img src="assets/img/logo-s.png" /></center>
+    </div>
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/barbe2.png" class="d-block w-100" style="height: 440px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/barbe3.png" class="d-block w-100" style="height: 440px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/barbe1.png" class="d-block w-100" style="height: 440px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="padding: 50px">
+        <p class="ppagina">Nos especializamos en cortes de cabello, barba y afeitado para
+            hombres. Nuestro equipo de barberos se preocupa de entregar
+            siempre un servicio de primer nivel a nuestros clientes.</p>
+        <p class="ppagina" style="padding: 10px;">GARANTIZAMOS EXCELENCIA Y SATISFACCIÓN</p>
+    </div>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <p class="psub" style="padding: 100px;">NUESTROS SERVICIOS</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/servicios.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Corte de Cabello</h5>
+                    <p class="card-text">Asesoría, corte, lavado y peinado de cabello, incluye aplicación de pomada
+                        a elección</p>
+                    <p class="card-text">$15.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/servicios.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Perfilado de Barba</h5>
+                    <p class="card-text">Perfilado navaja, arreglo de barba, toallas calientes.Incluye aplicación de
+                        productos premium.
+                    </p>
+                    <p class="card-text">$13.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/servicios.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Afeitado al Ras</h5>
+                    <p class="card-text">Toallas calientes, aplicación de crema/gel de afeitar, rasurado con navaja
+                        y after shave.</p>
+                    <p class="card-text">$13.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/servicios.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tratamiento Facial</h5>
+                    <p class="card-text">Limpieza, exfolación, toallas calientes, mascara de carbón, loción
+                        protectora e hidratante.</p>
+                    <p class="card-text">$14.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid psub" style="padding: 30px;">
+        UBICACIÓN
+    </div>
     <div>
-        <p>HOME</p>
-        <a href="#servicios">SERVICIOS</a><br><br>
-        <a href="#ubicacion">UBICACIN Y CONTACTO</a><br><br>
-        <a href="login.html">RESERVAR</a>
+        <center>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.292247802172!2d-70.68076012521905!3d-33.36343549305959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7025c925e0f%3A0x7f2f6a657c08d14a!2sDuoc%20UC%3A%20Sede%20Plaza%20Norte!5e0!3m2!1ses-419!2scl!4v1711684061143!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
     </div>
-    <div> 
-        <image src="assets/img/logo.png" /> 
-    </div>
-    <div>
-        <image src="assets/img/barbe1.png" /> 
-        <image src="assets/img/barbe2.png" />
-        <image src="assets/img/barbe3.png" />
-    </div>
-    <p>Nos especializamos en cortes de cabello, barba y afeitado para <br> hombres. Nuestro equipo de barberos se preocupa de entregar <br> siempre un servicio de primer nivel a nuestros clientes.</p>
-    <p>GARANTIZAMOS EXCELENCIA Y SATISFACCION.</p>
-    <a name="servicios"></a>
-    <h1>NUESTROS SERVICIOS</h1>
-    <image src="assets/img/servicios.png" />
-    <image src="assets/img/carrusel.png"/>
-    <a name="ubicacion"></a>
-    <h1>UBICACION</h1>
-    <image src="assets/img/mapa.png" />
-    <p>Sta. Elena de Huechuraba 1660, huechuraba, Region <br> Metropolitana</p>
-    <p>CONTACTO</p>
-    <a href="https://walink.co/778d34"><image src="assets/img/whatsapplogo.webp"/></a>  
-    <a href="http://www.instagram.com/hsbarberia"><image src="assets/img/instagram.jpg"/></a>
-    <a href="https//www.facebook.com/hsbarberia"><image src="assets/img/facebook.jpg"/></a> 
-    <P>MÁS QUE UNA BARBERÍA, UNA EXPERIENCIA DE LUJO.</P>    
-    </html>
+
+</body>
+
+</html>
