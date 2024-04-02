@@ -48,7 +48,13 @@
     font-size: 23px;
     color: black;
 }
-
+.home-logo{
+    width: 100%; /* Ancho completo */
+    max-width: 200px; /* Ancho máximo */
+    display: block; /* Para centrar horizontalmente */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    margin-bottom: 20px; /* Margen inferior */
+}
 .login{
     background-image: url('c:/github/barberia/assets/img/patern.png');
     height: 95vh; /* Misma altura que el div de la imagen */
