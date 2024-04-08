@@ -2,7 +2,7 @@
 /* Personaliza el color de fondo */
  .titulo{
     background-color: black; /* Color de fondo negro */
-    height: 5vh; /* Altura del título */
+    height: 7vh; /* Altura del título */
     color: white; /* Color del texto */
     font-size: 3.5vh; /* Tamaño de la fuente */
     text-align: center; /* Alineación del texto al centro */
@@ -12,7 +12,7 @@
     color: white; /* Color del texto */
     text-decoration: none; /* Quita el subrayado */
     font-family: Arial, sans-serif; /* Tipo de fuente */
-    font-size: 34px; /* Tamaño de la fuente */
+    font-size: 4vh; /* Tamaño de la fuente */
 }
 .psub{
     height: 5vh;
