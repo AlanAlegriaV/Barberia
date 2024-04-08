@@ -8,6 +8,12 @@
     text-align: center; /* Alineación del texto al centro */
     line-height: 5vh; /* Altura de línea para centrar verticalmente */
 }
+.navbar {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-size: 34px; /* Tamaño de la fuente */
+}
 .psub{
     height: 5vh;
     color: gold;
