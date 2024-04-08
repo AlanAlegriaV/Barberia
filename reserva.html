@@ -1,25 +1,44 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Reserva-HS</title>
-    <h1>Reservar hora de atencion</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-HS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="c:/github/barberia/assets/css/estilo.css">
 </head>
 
 <body>
-    <div>
-        <label for="fecha_atencion">Seleccione fecha:</label>
-        <input type="date" id="fecha_atencion" name="fecha_atencion" required>
-    </div>
-    <div>
-        <label for="hora_atencion"> Seleccione horario :</label>
-        <select id="hora_atencion" name="hora_atencion" required>
-            <option value="proyecto1">12:00</option>
-        </select>
-    </div>
-    <div>
-        <button type="submit">Agendar hora</button>
+    <div class="titulo">
+        Vive la experiencia, Reserva tu hora
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-4 login text-center">
+
+                <div style="background-color: white; padding: 41px;border-radius:5%;">
+                    <img src="c:/github/barberia/assets//img/logo-s.png" class="login-logo">
+                    <div class="mb-3 align-items-center justify-content-center">
+                        <label for="fecha_atencion">Seleccione fecha:</label>
+                        <input type="date" id="fecha_atencion" name="fecha_atencion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hora_atencion"> Seleccione horario :</label>
+                        <select id="hora_atencion" name="hora_atencion" required>
+                            <option value="proyecto1">12:00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 img_lateral"></div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+
+
