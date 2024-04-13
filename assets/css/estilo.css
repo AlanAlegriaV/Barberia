@@ -61,11 +61,12 @@
     color: black;
 }
 .social-logo{
-    width: 30%; /* Ancho completo */
+    width: 50px; /* Ancho completo */
     max-width: 200px; /* Ancho máximo */
     display: block; /* Para centrar horizontalmente */
     margin: 0 auto; /* Para centrar horizontalmente */
     margin-bottom: 20px; /* Margen inferior */
+    
 }
 .login{
     background-image: url('c:/github/barberia/assets/img/patern.png');
