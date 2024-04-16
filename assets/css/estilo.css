@@ -27,19 +27,19 @@
     background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
     background-position: center; /* Posiciona la imagen en el centro */
     height: 95vh; /* Altura del div con la imagen */
-    background-image: url('c:/github/barberia/assets/img/barbe2.png'); /* Ruta de la imagen de fondo */
+    background-image: url('./assets/img/barbe2.png'); /* Ruta de la imagen de fondo */
 }
 .img_restorepass{
     background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
     background-position: center; /* Posiciona la imagen en el centro */
     height: 95vh; /* Altura del div con la imagen */
-    background-image: url('c:/github/barberia/assets/img/restore.png'); /* Ruta de la imagen de fondo */
+    background-image: url('./assets/img/restore.png'); /* Ruta de la imagen de fondo */
 }
 .img_lateral_crea{
     background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
     background-position: center; /* Posiciona la imagen en el centro */
     height: 95vh; /* Altura del div con la imagen */
-    background-image: url('c:/github/barberia/assets/img/barbe3.png'); /* Ruta de la imagen de fondo */
+    background-image: url('./assets/img/barbe3.png'); /* Ruta de la imagen de fondo */
 }
 
 .pcorreo{
@@ -69,7 +69,7 @@
     
 }
 .login{
-    background-image: url('c:/github/barberia/assets/img/patern.png');
+    background-image: url('./assets/img/patern.png');
     height: 95vh; /* Misma altura que el div de la imagen */
     padding: 40px; /* Espacio interno */
 }
