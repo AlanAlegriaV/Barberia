@@ -16,19 +16,18 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class=" col-lg-4 login text-center">
-
-                <div style="background-color: white; padding: 41px;border-radius:5%;">
+            <div class="col-lg-4 login text-center">
+                <div style="background-color: white; padding: 41px; border-radius: 5%;">
                     <img src="./assets//img/logo-s.png" class="login-logo">
                     <div class="mb-3 align-items-center justify-content-center">
-                        <label for="formGroupExampleInput" style="text-align:justify;">Correo</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        <label for="email" style="text-align:justify;">Correo</label>
+                        <input type="text" class="form-control" id="email" placeholder="">
                     </div>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="">
                     </div>
-                    <a class="btn btn-primary" href="./reserva.html" role="button">Iniciar</a><br>
+                    <button class="btn btn-primary" id="loginButton">Iniciar</button><br>
                     <a href="restorepass.html">¿OLVIDASTE TU CLAVE?</a><br>
                     <a href="creausuario.html">¿NO TIENES CUENTA?</a>
                 </div>
@@ -36,6 +35,13 @@
             <div class="col-lg-8 img_lateral"></div>
         </div>
     </div>
+
+    <!-- Agregamos jQuery y el plugin jQuery Validate al final del body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+    <!-- Agregamos el script personalizado para la autenticación -->
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>
