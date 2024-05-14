@@ -17,8 +17,10 @@ $(document).ready(function(){
 
         // Verificamos si se encontró un usuario autenticado
         if (authenticatedUser) {
-            // Si se encontró, redirigimos al usuario a la página de reserva
-            window.location.href = './reserva.html';
+            // Si se encontró, almacenamos el nombre del usuario en el almacenamiento local
+            localStorage.setItem('user', authenticatedUser.name);
+            // Redirigimos al usuario a la página de inicio
+            window.location.href = './homepage.html';
         } else {
             // Si no se encontró, mostramos un mensaje de error al usuario
             alert('Correo electrónico o contraseña incorrectos');

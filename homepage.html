@@ -9,9 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>HomePage-HS</title>
-    <a name='home'></a>
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +39,15 @@
                         <a class="nav-link " href="login.html">Reserva</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="cerrarsesion.html">Cerrar sesion</a>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </li>
+                    <!-- Agregamos un elemento para mostrar el mensaje de bienvenida -->
+                    <li class="nav-item mensaje-bienvenida">
+                        <span class="nav-link">Bienvenido <span id="usernameLabel"></span></span>
+                    </li>
+                    <!-- Agregamos un elemento para el botón de cerrar sesión -->
+                    <li class="nav-item cerrar-sesion" style="display: none;">
+                        <a class="nav-link" href="#" id="logoutButton">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
@@ -65,9 +76,7 @@
             siempre un servicio de primer nivel a nuestros clientes.</p>
         <p class="ppagina" style="padding: 10px;">GARANTIZAMOS EXCELENCIA Y SATISFACCIÓN</p>
     </div>
-</head>
 
-<body>
     <div class="container-fluid text-center">
         <a name="servicio"></a>
         <p class="psub" style="padding: 100px;">NUESTROS SERVICIOS</p>
@@ -170,9 +179,11 @@
             <div class="col-sm-4"></div>
         </div>
     </div><br><br>
+    <div class="container-fluid titulo">
+        Happy Soto Barber. Nos reservamos el derecho de admisión, visítanos!!!
+    </div>
+
+    <script src="./assets/js/home.js"></script>
 </body>
-<div class="container-fluid titulo">
-    Happy Soto Barber. Nos reservamos el derecho de admisión, visitanos!!!
-</div>
 
 </html>
