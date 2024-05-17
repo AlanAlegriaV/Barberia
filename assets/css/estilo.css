@@ -1,6 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card-header, .card-body {
+    text-align: center;
+}
+
 
 /* Personaliza el color de fondo */
- .titulo{
+.titulo{
+    background-color: black; /* Color de fondo negro */
+    height: 7vh; /* Altura del título */
+    color: white; /* Color del texto */
+    font-size: 3.5vh; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto al centro */
+    line-height: 5vh; /* Altura de línea para centrar verticalmente */
+}
+.tit{
     background-color: black; /* Color de fondo negro */
     height: 7vh; /* Altura del título */
     color: white; /* Color del texto */

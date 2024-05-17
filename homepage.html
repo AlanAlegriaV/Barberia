@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>HomePage-HS</title>
+    <style>
+        .exchange-rate-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        .exchange-rate {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .exchange-rate img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .exchange-rate p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +60,7 @@
                         <a class="nav-link " href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="login.html">Reserva</a>
+                        <a class="nav-link " href="reserva_cliente.html">Reserva</a>
                     </li>
                     <li class="nav-item">
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -53,6 +77,20 @@
             </div>
         </div>
     </nav>
+
+    <!-- Sección para mostrar los valores del Bitcoin y del Dólar a Peso Chileno -->
+    <div class="container-fluid text-center bg-light py-3 exchange-rate-container">
+        <div class="exchange-rate">
+            <img src="./assets/img/btc.png" alt="BTC">
+            <p id="valorBitcoin">Cargando valor del Bitcoin...</p>
+        </div>
+        <div class="exchange-rate">
+            <img src="./assets/img/usd.png" alt="USD">
+            <p id="valorDolar">Cargando valor del Dólar a Peso Chileno...</p>
+            <img src="./assets/img/clp.png" alt="CLP">
+        </div>
+    </div>
+
     <div class="container-fluid login-logo" style="padding: 15px;">
         <img src="./assets/img/logo-s.png" />
     </div>
