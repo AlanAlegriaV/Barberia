@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-HS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+</head>
+
+<body style="background-image: url(./assets/img/patern.png)">
+    <div class="titulo">
+        ADMINISTRACION PERSONAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="./listar_reservas.html" class="btn btn-primary">Ver Horas reservadas</a>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Registrar Nuevo Barbero</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="barber-form">
+                            <div class="form-group">
+                                <label for="barber-name">Nombre del Barbero:</label>
+                                <input type="text" class="form-control" id="barber-name" name="barber-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="barber-photo">Foto del Barbero:</label>
+                                <input type="file" class="form-control-file" id="barber-photo" name="barber-photo" accept="image/*" required>
+                                <img id="preview-image" src="" alt="Miniatura de la foto del barbero" class="img-thumbnail mt-3" style="display: none; max-width: 100px;">
+                            </div>
+                            <div class="form-group">
+                                <label for="barber-phone">Número de Teléfono:</label>
+                                <input type="tel" class="form-control" id="barber-phone" name="barber-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="barber-email">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="barber-email" name="barber-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Servicios:</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="service-cut" name="services[]" value="Corte">
+                                            <label for="service-cut" class="form-check-label">Corte</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="service-shave" name="services[]" value="Rasurado">
+                                            <label for="service-shave" class="form-check-label">Rasurado</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="service-shaving" name="services[]" value="Afeitado">
+                                            <label for="service-shaving" class="form-check-label">Afeitado</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="service-massage" name="services[]" value="Masaje">
+                                            <label for="service-massage" class="form-check-label">Masaje</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Registrar Barbero</button>
+                            <button type="button" class="btn btn-success ml-2" id="modify-barber-btn" style="display:none;">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Listado de Barberos</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="barber-list" class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/registro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Reservas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <style>
+        .table-bg-white {
+            background-color: white;
+        }
+    </style>
+</head>
+<div class="titulo text-center">
+    Reservas Agendadas
+</div>
+<body style="background-image: url(./assets/img/patern.png);">
+    <div class="container mt-5">
+        
+        <button type="button" class="btn btn-secondary" id="backButton">Volver</button>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <table class="table table-bordered table-bg-white">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nombre del Cliente</th>
+                            <th>Correo del Cliente</th>
+                            <th>Nombre del Barbero</th>
+                            <th>Servicios Seleccionados</th>
+                            <th>Fecha de la Reserva</th>
+                            <th>Hora de la Reserva</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reservations-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/listar_reservas.js"></script>
+</body>
+</html>

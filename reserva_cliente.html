@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Servicios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <style>
+        .barber-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url(./assets/img/patern.png);">
+    <div class="titulo text-center">
+        Reserva de Servicios
+    </div>
+    <div class="container mt-5">
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Datos del Cliente</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="reservation-form">
+                            <div class="form-group">
+                                <label for="client-name">Nombre del Cliente:</label>
+                                <input type="text" class="form-control" id="client-name" name="client-name" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-email">Correo del Cliente:</label>
+                                <input type="email" class="form-control" id="client-email" name="client-email" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservation-date">Fecha de la Reserva:</label>
+                                <input type="date" class="form-control" id="reservation-date" name="reservation-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservation-time">Hora de la Reserva:</label>
+                                <select class="form-control" id="reservation-time" name="reservation-time" required>
+                                    <option value="12-1">12:00 - 1:00</option>
+                                    <option value="1-2">1:00 - 2:00</option>
+                                    <option value="2-3">2:00 - 3:00</option>
+                                    <option value="4-5">4:00 - 5:00</option>
+                                    <option value="5-6">5:00 - 6:00</option>
+                                    <option value="6-7">6:00 - 7:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="selected-services">Servicios Disponibles para: <span id="barber-name"></span></label>
+                                <div id="services-list" class="row">
+                                    <!-- Aquí se agregarán dinámicamente los servicios del barbero seleccionado -->
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar Reserva</button>
+                            <button type="button" class="btn btn-secondary" id="backButton">Volver</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Seleccione un Barbero</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="barber-list" class="row">
+                            <!-- Aquí se agregarán dinámicamente las tarjetas de barberos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/reserva.js"></script>
+</body>
+</html>
