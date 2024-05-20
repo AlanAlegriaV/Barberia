@@ -8,30 +8,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>HomePage-HS</title>
-    <style>
-        .exchange-rate-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 10px 0;
-        }
-
-        .exchange-rate {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .exchange-rate img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .exchange-rate p {
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -58,11 +34,11 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
-                    <!-- Agregamos un elemento para mostrar el mensaje de bienvenida -->
+  
                     <li class="nav-item mensaje-bienvenida">
                         <span class="nav-link">Bienvenido <span id="usernameLabel"></span></span>
                     </li>
-                    <!-- Agregamos un elemento para el botón de cerrar sesión -->
+                    
                     <li class="nav-item cerrar-sesion" style="display: none;">
                         <a class="nav-link" href="#" id="logoutButton">Cerrar sesión</a>
                     </li>
@@ -71,7 +47,6 @@
         </div>
     </nav>
 
-    <!-- Sección para mostrar los valores del Bitcoin y del Dólar a Peso Chileno -->
     <div class="container-fluid text-center bg-light py-3 exchange-rate-container">
         <div class="exchange-rate">
             <img src="./assets/img/btc.png" alt="BTC">

@@ -24,6 +24,38 @@ h1 {
     text-align: center;
 }
 
+.exchange-rate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+.table-bg-white {
+    background-color: white;
+}
+.invalid-feedback {
+    display: none;
+}
+.is-invalid + .invalid-feedback {
+    display: block;
+}
+.exchange-rate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.barber-card {
+    margin-bottom: 20px;
+}
+.exchange-rate img {
+    width: 24px;
+    height: 24px;
+}
+
+.exchange-rate p {
+    margin: 0;
+}
 
 /* Personaliza el color de fondo */
 .titulo{

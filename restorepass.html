@@ -6,14 +6,6 @@
     <title>Recuperar-HS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/estilo.css">
-    <style>
-        .invalid-feedback {
-            display: none;
-        }
-        .is-invalid + .invalid-feedback {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <div class="titulo text-center">
@@ -39,34 +31,10 @@
                 </div>
             </div>
             <div class="col-lg-8 img_restorepass d-none d-lg-block">
-                <!-- Imagen o contenido adicional aquí -->
             </div>
         </div>
     </div>
-
-    <script>
-        // Validación personalizada de Bootstrap
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                var form = document.getElementById('recover-form');
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    
-                    var emailInput = document.getElementById('emailInput');
-                    
-                    if (form.checkValidity() === false) {
-                        emailInput.classList.add('is-invalid');
-                    } else {
-                        emailInput.classList.remove('is-invalid');
-                        window.location.href = 'revisacorreo.html';
-                    }
-                    
-                    form.classList.add('was-validated');
-                }, false);
-            }, false);
-        })();
-    </script>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/restorepass.js"></script>
 </html>
