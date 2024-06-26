@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
     // Esta línea asegura que el código se ejecute una vez que el documento HTML haya sido completamente cargado.
-    
+
     // Aquí comenzamos la configuración de la validación del formulario usando el plugin jQuery Validate.
     $('#registerForm').validate({
         // Establecemos las reglas de validación para cada campo del formulario.
@@ -48,7 +48,7 @@ $(document).ready(function(){
             }
         },
         // Función que se ejecuta cuando el formulario se envía con éxito.
-        submitHandler: function(form) {
+        submitHandler: function (form) {
             // Obtenemos los valores del formulario.
             var name = $('#name').val();
             var email = $('#email').val();
@@ -61,20 +61,32 @@ $(document).ready(function(){
                 password: password
             };
 
-            // Obtenemos la lista de usuarios almacenada en localStorage o creamos una lista vacía si no existe.
-            var users = JSON.parse(localStorage.getItem('users')) || [];
-
-            // Agregamos el nuevo usuario a la lista de usuarios.
-            users.push(newUser);
-
-            // Almacenamos la lista de usuarios actualizada en localStorage.
-            localStorage.setItem('users', JSON.stringify(users));
-
-            // Redirigimos a la página de usuario creado.
-            window.location.href = 'usuariocreado.html';
-
-            // Limpiamos el formulario.
-            form.reset();
+            // Enviamos el nuevo usuario a la API de Django utilizando fetch.
+            fetch('http://127.0.0.1:8000/api/clientes/', {
+                method: 'POST', // Método HTTP para crear un nuevo recurso
+                headers: {
+                    'Content-Type': 'application/json', // Indicamos que el cuerpo de la solicitud es JSON
+                    'Accept': 'application/json', // Indicamos que esperamos respuesta en JSON
+                },
+                body: JSON.stringify(newUser) // Convertimos el objeto newUser a JSON
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json(); // Convertimos la respuesta a JSON
+                })
+                .then(data => {
+                    console.log('Usuario creado con éxito:', data);
+                    // Redirigimos a la página de usuario creado.
+                    window.location.href = 'usuariocreado.html';
+                    form.reset(); // Restablecemos el formulario.
+                })
+                .catch(error => {
+                    console.error('Error al crear usuario:', error);
+                    alert('Error al enviar datos. Intente nuevamente.');
+                });
         }
+
     });
 });
